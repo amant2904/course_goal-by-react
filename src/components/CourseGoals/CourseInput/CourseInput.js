@@ -28,6 +28,7 @@ const CourseInput = props => {
         <label>Course Goal</label>
         <input type="text" onChange={goalInputChangeHandler} />
       </div>
+      {/* conditional style on button */}
       <Button type="submit" blurButton={enteredValue.trim().length === 0 ? "blur_button" : ""}>Add Goal</Button>
     </form>
   );
